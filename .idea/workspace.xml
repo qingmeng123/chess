@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b9747a5-c0ef-4759-b063-65eb56c67bdc" name="Changes" comment="" />
+    <list default="true" id="9b9747a5-c0ef-4759-b063-65eb56c67bdc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f6d02d8a-b754-43be-8378-f35eb0343756.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f6d02d8a-b754-43be-8378-f35eb0343756.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/User.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/User.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/ChessBoard.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/Chess_board.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/define.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/define.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/User.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/User.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/parse.go" beforeDir="false" afterPath="$PROJECT_DIR$/tools/parse.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocket/ws_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/ws_test.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +31,9 @@
     </option>
   </component>
   <component name="GOROOT" url="file://$PROJECT_DIR$/../../../JetBrain/Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
@@ -48,7 +64,7 @@
       <recent name="E:\GoProjects\src\Chess" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build Chess/cmd">
+  <component name="RunManager" selected="Go Test.TestUserService_Login in Chess/service">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Chess" />
       <working_directory value="$PROJECT_DIR$" />
@@ -58,31 +74,64 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build Chess" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestUserDao_GetUserByToken in Chess/dao" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Chess" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/dao" />
+      <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="Chess" />
+      <package value="Chess/dao" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/main.go" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestUserDao_GetUserByToken\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build Chess/cmd" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestUserDao_InsertUser in Chess/dao" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Chess" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/dao" />
+      <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="Chess/cmd" />
+      <package value="Chess/dao" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/cmd/main.go" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestUserDao_InsertUser\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build Chess/play/cmd" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestUserService_GetIdByToken in Chess/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Chess" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/service" />
+      <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="Chess/play/cmd" />
+      <package value="Chess/service" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/play/cmd/main.go" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestUserService_GetIdByToken\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestUserService_Login in Chess/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Chess" />
+      <working_directory value="$PROJECT_DIR$/service" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="Chess/service" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestUserService_Login\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestUserService_Register in Chess/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Chess" />
+      <working_directory value="$PROJECT_DIR$/service" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="Chess/service" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestUserService_Register\E$" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -97,9 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build Chess/cmd" />
-        <item itemvalue="Go Build.go build Chess/play/cmd" />
-        <item itemvalue="Go Build.go build Chess" />
+        <item itemvalue="Go Test.TestUserService_Login in Chess/service" />
+        <item itemvalue="Go Test.TestUserService_Register in Chess/service" />
+        <item itemvalue="Go Test.TestUserService_GetIdByToken in Chess/service" />
+        <item itemvalue="Go Test.TestUserDao_GetUserByToken in Chess/dao" />
+        <item itemvalue="Go Test.TestUserDao_InsertUser in Chess/dao" />
       </list>
     </recent_temporary>
   </component>

@@ -40,11 +40,11 @@ func Move(isRed bool, x1, y1, x2, y2 int) string {
 	if Board[y1][x1]/8 == 1 && isRed {
 		return "未选中红方棋子"
 	}
-	if Board[y1][x1]/8 == 0 && isRed == false {
+	if Board[y1][x1]/8 == 0 && !isRed {
 		return "未选中黑方棋子"
 	}
 	//目的地位置为己方棋子
-	if Board[y2][x2]/8 == 0 {
+	if Board[y2][x2]/8 == 0 && Board[y2][x2] != 0 {
 		return "移动错误"
 	}
 	switch Board[y1][x1] % 7 {
@@ -80,7 +80,7 @@ func Move(isRed bool, x1, y1, x2, y2 int) string {
 		if Board[y1+(y1-y2)/2][x1+(x1-x2)/2] != 0 {
 			return "移动错误"
 		}
-		Board[y2][x2] = 3
+		Board[y2][x2] = RedXiang
 		Board[y1][x1] = 0
 	case 4: //马
 		if x1-x2 == 1 || x1-x2 == -1 {
@@ -120,6 +120,7 @@ func Move(isRed bool, x1, y1, x2, y2 int) string {
 		}
 		Board[y2][x2] = 5
 		Board[y1][x1] = 0
+		break
 	case 6: //炮
 		if Board[y2][x2] == 0 {
 			return "移动错误"

@@ -72,7 +72,7 @@ func (s *UserService) Register(user *model.User) (*model.User, error) {
 	return user, nil
 }
 
-//根据token获取用户id并判断是否有效
+// GetIdByToken 根据token获取用户id并判断是否有效
 func (s *UserService) GetIdByToken(token string) (int64, error) {
 	id := s.GetIdByTokenCache(token)
 	if id != 0 {

@@ -15,7 +15,7 @@ func UserLogin(c *gin.Context) {
 	loginUser, err := userService.Login(u)
 	if err != nil {
 		fmt.Println("err:", err.Error())
-		tools.Error(c, -1, err.Error(), "")
+		tools.Error(c, -1, "登录失败", "")
 	} else {
 		tools.Success(c, 0, "登录成功", loginUser)
 	}

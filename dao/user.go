@@ -17,7 +17,8 @@ func (d *UserDao) UpdateUser(user *model.User) error {
 }
 
 func (d *UserDao) InsertUser(user *model.User) error {
-	result := DB.Select("user_name", "pass_word", "salt", "create_time", "update_time", "last_ip", "token", "status").Create(&user)
+	result := DB.Select("user_name", "pass_word", "salt", "create_time",
+		"update_time", "last_ip", "token", "status").Create(&user)
 	return result.Error
 }
 

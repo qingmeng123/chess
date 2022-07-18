@@ -9,8 +9,8 @@ import (
 //绑定用户
 func ParseUser(c *gin.Context) *model.User {
 	m := new(model.User)
-	if err := c.Bind(m); err != nil {
-		log.Println(err.Error())
+	if err := c.ShouldBindJSON(m); err != nil {
+		log.Fatalln("parse user err:", err.Error())
 	}
 	m.LastIp = c.ClientIP()
 	return m
